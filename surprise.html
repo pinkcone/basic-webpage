@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9INE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div><a href ="index.html"><img src="zdjecia/logo.jpg" alt="logo"></a></div>
+</header>
+<nav>
+    <ul class>
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="players.html">Zawodnicy</a></li>
+        <li class="dropdown">
+            <a href="history.html">Historia</a>
+            <ul class="dropdown-menu">
+                <li><a href="atstory.html">Początki</a></li>
+                <li><a href="polstory.html">Polski zespół</a></li>
+            </ul>
+        </li>
+        <li><a href="surprise.html">Niespodzianka</a></li>
+        <li><a href="competition.html">Konkurs</a></li>
+    </ul>
+</nav>
+<main class = "ind">
+<h3>Losowe zdjęcie hadesa:</h3>
+<div class = "sur" id="image-container"></div>
+<button id="generate-button">Generuj nowe zdjęcie</button>
+
+
+<script src="api-hades.js"></script>
+</main>
+<footer>
+    <div>&#169;SD</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9INE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div><a href ="index.html"><img src="zdjecia/logo.jpg" alt="logo"></a></div>
+</header>
+<nav>
+    <ul class>
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="players.html">Zawodnicy</a></li>
+        <li class="dropdown">
+            <a href="history.html">Historia</a>
+            <ul class="dropdown-menu">
+                <li><a href="atstory.html">Początki</a></li>
+                <li><a href="polstory.html">Polski zespół</a></li>
+            </ul>
+        </li>
+        <li><a href="surprise.html">Niespodzianka</a></li>
+        <li><a href="competition.html">Konkurs</a></li>
+    </ul>
+</nav>
+<main class = "comp">
+    <h1>WEŹ UDZIAŁ I WYGRAJ: </h1>
+    <div class="slider">
+        <div class="skins">
+            <img src="zdjecia/m4a1.png" alt="M4A1">
+            <img src="zdjecia/usp.png" alt="USP">
+            <img src="zdjecia/glock.png" alt="Glock">
+        </div>
+        <div class="slider-controls">
+            <button onclick="previousSlide()">Poprzednie</button>
+            <button onclick="nextSlide()">Następne</button>
+        </div>
+    </div>
+    <script src="slider.js"></script>
+    <form id="myForm">
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="nick">Nick Steam:</label>
+        <input type="text" id="nick" name="nick" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="kraj">Kraj</label>
+        <select id="kraj">
+            <option value="pol">Polska</option>
+            <option value="ger">Niemcy</option>
+            <option value="uk">Wielka Brytania</option>
+            <option value="U">Ukraina</option>
+            <option value="c">Czechy</option>
+        </select>
+        <div><h3>Który skin chcesz wygrać:</h3></div>
+        <div>
+            <input type="checkbox" id="s1" name="skin" value="M4A1S"/>
+            <label for="s1">M4A1S | Printstream</label>
+            <input type="checkbox" id="s2" name="skin" value="glock"/>
+            <label for="s2">Glock-18 | Neo-Noir</label>
+            <input type="checkbox" id="s3" name="skin" value="usp"/>
+            <label for="s3">USP-S | Monster Mashup</label>
+            <h3>Kto wygra mecz 9INE vs NIP?</h3></div>
+        <div>
+            <input type="radio" id="typ1" name="typ" value="9INE" />
+            <label for="typ1">9INE</label>
+            <input type="radio" id="typ2" name="typ" value="NIP" />
+            <label for="typ2" >NIP</label>
+        </div>
+        <div class="but">
+        <button type="button" id="saveButton">Zapisz</button>
+        <button type="button" id="deleteButton">Usuń</button>
+        <button type="button" id="showButton">Pokaż dane</button>
+        </div>
+    </form>
+        <script src="form.js"> </script>
+</main>
+<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+<script src = "skrypt.js"></script>
+<footer>
+    <div>&#169;SD</div>
+</footer>
+
+</body>
+</html>
